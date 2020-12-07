@@ -72,12 +72,13 @@ Communication between user and application based on JSON format message which pa
 
 ## Request
 
-|Field           |Type     |Description              |Mandatory|Default|
-|----------------|:-------:|-------------------------|:-------:|:-----:|
-|content-length  |*Boolean*|Allow insecure connection|N        |False  |
-|address         |*Boolean*|Follow redirects         |N        |False  |
-|xpath-expression|*Long*   |Limit redirects          |N        |5      |
-|timeout         |*String* |HTTP URL for downloading |Y        |       |
+|Field           |Type     |Description                                     |Mandatory|Default|
+|----------------|:------:|-------------------------------------------------|:-------:|:-----:|
+|content-length  |*Long*  |Count of bytes for reading                       |Y        |       |
+|address         |*String*|TCP server connection address                    |Y        |       |
+|xpath-expression|*String*|XPath expression for parsing data                |Y        |       |
+|dial-timeout    |*String*|Timeout for establishing connection to the server|N        |1s     |
+|read-timeout    |*String*|Timeout for reading data from the server         |N        |1s     |
 
 ## Response
 
