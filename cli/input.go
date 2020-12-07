@@ -60,7 +60,7 @@ type Input struct {
 
 var (
 	ErrZeroContentLengthValue = errors.New("input validation error: zero content-length value")
-	ErrEmptyAddress         = errors.New("input validation error: empty address")
+	ErrEmptyAddress           = errors.New("input validation error: empty address")
 	ErrInvalidAddress         = errors.New("input validation error: invalid address")
 	ErrEmptyXPathExpression   = errors.New("input validation error: empty xpath expression")
 )

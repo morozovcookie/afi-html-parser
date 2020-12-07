@@ -21,7 +21,7 @@ func TestParser_Parse(t *testing.T) {
 		expectedNodes []string
 	}{
 		{
-			name: "pass",
+			name:    "pass",
 			enabled: true,
 
 			r: bytes.NewBufferString(`<ul>
@@ -36,7 +36,7 @@ func TestParser_Parse(t *testing.T) {
 			},
 		},
 		{
-			name: "query error",
+			name:    "query error",
 			enabled: true,
 
 			r: bytes.NewBufferString(`<ul>
