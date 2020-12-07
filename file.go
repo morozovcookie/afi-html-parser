@@ -1,9 +1,10 @@
 package afihtmlparser
 
 import (
-	"github.com/stretchr/testify/mock"
 	"io"
 	"time"
+
+	"github.com/stretchr/testify/mock"
 )
 
 type DownloadCallback func(r io.Reader) (err error)
